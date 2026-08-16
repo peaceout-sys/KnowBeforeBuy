@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KnowBeforeBuy</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div class="brand">
+        <span class="brand__mark">KB</span>
+        <span class="brand__name">KnowBeforeBuy</span>
+      </div>
+      <button id="rescanBtn" class="icon-btn" title="Re-scan this page">&#8635;</button>
+    </header>
+
+    <section id="productCard" class="product-card product-card--loading">
+      <div class="product-card__title">Scanning this page&hellip;</div>
+    </section>
+
+    <section id="chat" class="chat">
+      <div id="messages" class="chat__messages"></div>
+    </section>
+
+    <footer class="composer">
+      <input
+        id="questionInput"
+        type="text"
+        placeholder="Ask about this product&hellip;"
+        autocomplete="off"
+        disabled
+      />
+      <button id="sendBtn" class="send-btn" disabled>&#10148;</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
